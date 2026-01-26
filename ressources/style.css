@@ -1,0 +1,455 @@
+/* --- Variables et Reset --- */
+:root {
+    --bg-color: #FBF6EE; /* Couleur crème du fond Wix */
+    --text-color: #1F2532; /* Gris foncé/Bleu nuit pour le texte */
+    --accent-color: #333333;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* --- Header --- */
+header {
+    padding: 20px 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo {
+    width: 30px; /* Ajuster selon ton logo */
+    height: 30px;
+    background-color: #000; /* Placeholder temporaire */
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555;
+}
+
+nav a:hover, nav a.active {
+    color: #000;
+}
+
+/* --- Sections Principales --- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Section Bienvenue */
+.welcome-section {
+    margin-bottom: 80px;
+}
+
+.welcome-section h1 {
+    font-family: var(--font-serif);
+    font-size: 5rem; /* Très grand titre comme sur l'image */
+    font-weight: 400;
+    color: #2c3e50; /* Légèrement bleuté comme sur l'image */
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+/* Sections Actions (Créer événement) */
+.action-section {
+    margin-bottom: 100px;
+}
+
+.action-section h2 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.sub-text {
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+}
+
+/* Boutons */
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    color: #333;
+    background: transparent;
+    font-weight: 300;
+}
+
+.btn-outline:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.large-btn {
+    padding: 20px 60px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.small-link {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+.small-link a {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 50px;
+    padding: 0 40px 40px 40px;
+    position: relative;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: #333;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centré pour ressembler à l'image */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer-brand h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Partie centrale Logos */
+.partners-block {
+    text-align: center;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+/* Placeholders pour les logos du footer (Ronds bleus sur ton image) */
+.circle-logo-placeholder, .comet-logo-placeholder {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #0b1c3d, #4facfe); /* Dégradé pour imiter tes logos */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.comet-logo-placeholder {
+     background: linear-gradient(135deg, #4facfe, #fff); 
+     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Forme abstraite */
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.2;
+}
+
+.vertical-separator {
+    width: 1px;
+    height: 100px;
+    background-color: #000;
+}
+
+.partner-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+    color: #2c3e50;
+}
+
+.footer-bottom .underline {
+    text-decoration: underline;
+}
+
+.bottom-line {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Responsive basique */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-brand h3 {
+        position: static;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-section h1 {
+        font-size: 3rem;
+    }
+}
+
+/* --- Styles spécifiques à la page Événement --- */
+
+/* Intro */
+.event-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-intro h1 {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.link-underline {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* Layout en grille pour le contenu principal */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start; /* Aligne le haut du formulaire et des contacts */
+}
+
+/* --- Formulaire --- */
+.form-section {
+    flex: 3; /* Prend plus de place que la sidebar */
+}
+
+.form-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    background-color: transparent;
+    border: 1px solid #888;
+    padding: 10px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #000;
+}
+
+/* Grilles internes du formulaire */
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.three-cols .form-group {
+    flex: 1;
+}
+
+.two-cols-small .form-group:first-child {
+    flex: 0 0 100px; /* Largeur fixe pour le code pays */
+}
+.two-cols-small .form-group:last-child {
+    flex: 1; /* Le reste pour le téléphone */
+}
+
+.form-tips {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #666;
+    margin: 30px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 0;
+    background-color: #2c3e50; /* Bleu foncé */
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1a2530;
+}
+
+/* --- Sidebar Contact --- */
+.contact-sidebar {
+    flex: 1; /* Prend moins de place */
+    padding-top: 80px; /* Pour aligner visuellement avec le début des champs du formulaire */
+}
+
+.contact-sidebar h3 {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    text-decoration: underline;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.contact-list a:hover {
+    color: #000;
+}
+
+/* Responsive pour le formulaire */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column-reverse; /* Met les contacts au-dessus ou en dessous sur mobile */
+        gap: 40px;
+    }
+    
+    .contact-sidebar {
+        padding-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .two-cols-small .form-group:first-child {
+        flex: auto;
+    }
+}

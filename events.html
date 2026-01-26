@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un événement | Skynium E-Reservation</title>
+    <link rel="stylesheet" href="ressources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/ressources/icones/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/ressources/icones/favicon.svg" />
+    <link rel="shortcut icon" href="/ressources/icones/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/ressources/icones/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Skynium E-Reservation" />
+    <link rel="manifest" href="/ressources/icones/site.webmanifest" />
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="logo_placeholder.png" alt="Logo Skynium" class="nav-logo">
+                <span class="brand-name">Skynium E-Reservation</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="events.html" class="active">Création d'événement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="event-main">
+        <section class="page-intro">
+            <h1>Créer un événement</h1>
+            <p class="intro-text">
+                Sur cette page, vous pourrez créer votre propre événement en quelques étapes simples. Veuillez remplir le formulaire ci-dessous avec toutes les informations nécessaires pour permettre aux participants de bien comprendre les détails et le déroulement de votre événement. Nous vous recommandons de nous écrire sur <a href="#" class="link-underline">WhatsApp</a> ou <a href="#" class="link-underline">Messenger</a>.
+            </p>
+        </section>
+
+        <div class="content-wrapper">
+            
+            <section class="form-section">
+                <h2 class="form-title">SkyCreator</h2>
+                
+                <form action="#" method="POST">
+                    <div class="form-row three-cols">
+                        <div class="form-group">
+                            <label for="firstname">Prénom *</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Nom *</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row two-cols-small">
+                        <div class="form-group">
+                            <label for="code">Code *</label>
+                            <select id="code" name="code">
+                                <option value="+33">FR +33</option>
+                                <option value="+32">BE +32</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description de l'événement *</label>
+                        <textarea id="description" name="description" rows="10" placeholder="Ici rentrez les informations complémentaires, la description de l'événement, le dress code, la date de fermeture des inscriptions..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Sélectionnez une adresse *</label>
+                        <input type="text" id="address" name="address" placeholder="Sélectionnez une adresse">
+                    </div>
+
+                    <div class="form-row three-cols">
+                        <div class="form-group">
+                            <label for="date">Sélectionnez une date *</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Sélectionnez une heure *</label>
+                            <input type="time" id="time" name="time" value="14:30">
+                        </div>
+                        <div class="form-group">
+                            <label for="event-title">Titre de l'événement *</label>
+                            <input type="text" id="event-title" name="event-title" placeholder="Saisir ici...">
+                        </div>
+                    </div>
+
+                    <p class="form-tips">TIPS : Si vous désirez vous pouvez directement nous contacter via nos moyens de communications (WhatsApp, Messenger, Instagram) pour permettre une meilleure compréhension de votre demande.</p>
+
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </section>
+
+            <aside class="contact-sidebar">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li><a href="https://wa.me/33667225452">WhatsApp</a></li>
+                    <li><a href="https://instagram.com/skynium">Instagram</a></li>
+                    <li><a href="https://facebook.com/SkyniumRECONECT">Facebook</a></li>
+                    <li><a href="mailto:contact@skynium.fr">E-Mail</a></li>
+                    <li><a href="sms:+33667225452">SMS</a></li>
+                </ul>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Skynium E-Reservation</h3>
+            </div>
+            <div class="partners-block">
+                <div class="logos-container">
+                    <div class="logo-wrapper">
+                        <div class="circle-logo-placeholder"></div> 
+                        <span class="caption">Skynium<br>E-Reservation</span>
+                    </div>
+                    <div class="vertical-separator"></div>
+                    <div class="logo-wrapper">
+                        <div class="comet-logo-placeholder"></div>
+                        <span class="caption">Skynium</span>
+                    </div>
+                </div>
+                <h3 class="partner-title">Partenaire officiel</h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Crée par <a href="#" class="underline">Skynium</a> en 2024.</p>
+        </div>
+        <div class="footer-line bottom-line"></div>
+    </footer>
+
+    <script>var FreeScoutW={s:{"color":"#fff1e7","position":"br","locale":"fr","require":["name","email","phone"],"id":3650658169}};(function(d,e,s){if(d.getElementById("freescout-w"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="freescout-w";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","https://support.iris.skynium.fr/modules/chat/js/widget.js?v=3633");</script>
+
+</body>
+</html>
