@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Créer un événement | Skynium E-Reservation</title>
+    <title>Créer un événement en ligne | Skynium E-Reservation</title>
+    <meta name="description" content="Créez votre événement en ligne avec Skynium E-Reservation. Remplissez le formulaire SkyCreator et activez votre système de réservation en quelques minutes.">
+    <meta name="keywords" content="créer événement en ligne, formulaire événement, réservation événement, Skynium E-Reservation, SkyCreator">
     <link rel="stylesheet" href="ressources/style.css">
+    <link rel="stylesheet" href="https://skynium.fr/ressources/fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
@@ -15,17 +18,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/ressources/icones/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Skynium E-Reservation" />
     <link rel="manifest" href="/ressources/icones/site.webmanifest" />
-    
 </head>
 <body>
 
     <header>
         <div class="header-container">
             <div class="logo-section">
-                <img src="ressources/icones/web-app-manifest-512x512.png" alt="Logo Skynium" class="nav-logo">
+                <img src="ressources/icones/web-app-manifest-512x512.png" alt="Logo Skynium E-Reservation" class="nav-logo">
                 <span class="brand-name"><a href="index.html">Skynium E-Reservation</a></span>
             </div>
-            <nav>
+            <nav aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="events.html" class="active">Création d'événement</a></li>
@@ -38,65 +40,99 @@
         <section class="page-intro">
             <h1>Créer un événement</h1>
             <p class="intro-text">
-                Sur cette page, vous pourrez créer votre propre événement en quelques étapes simples. Veuillez remplir le formulaire ci-dessous avec toutes les informations nécessaires pour permettre aux participants de bien comprendre les détails et le déroulement de votre événement. Nous vous recommandons de nous écrire sur <a href="https://wa.me/33667225452" class="link-underline">WhatsApp</a> ou <a href="mailto:contact@skynium.fr" class="link-underline">Mail</a>.
+                Renseignez les informations de votre événement via notre formulaire SkyCreator. Une fois soumis, notre équipe prend le relais pour mettre en place votre réservation en ligne. Pour toute question, n'hésitez pas à nous contacter directement sur <a href="https://wa.me/33667225452" class="link-underline">WhatsApp</a> ou par <a href="mailto:contact@skynium.fr" class="link-underline">e-mail</a>.
             </p>
         </section>
 
         <div class="content-wrapper">
-            
+
             <section class="form-section">
                 <h2 class="form-title">SkyCreator</h2>
-                
-                <iframe data-tally-src="https://tally.so/embed/gD9KzN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Skynium E-Reservation - Événement"></iframe>
-                
+
+                <iframe data-tally-src="https://tally.so/embed/gD9KzN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Skynium E-Reservation — Formulaire de création d'événement"></iframe>
+
                 <script>
                     var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
                 </script>
             </section>
 
             <aside class="contact-sidebar">
-                <h3>Contact</h3>
+                <h3>Nous contacter</h3>
                 <ul class="contact-list">
-                    <li><a href="https://wa.me/33667225452">WhatsApp</a></li>
-                    <li><a href="https://instagram.com/skynium#">Instagram</a></li>
-                    <li><a href="https://facebook.com/SkyniumRECONECT">Facebook</a></li>
-                    <li><a href="https://m.me/SkyniumRECONECT">Messenger</a></li>
-                    <li><a href="mailto:contact@skynium.fr">E-Mail</a></li>
-                    <li><a href="sms:+33667225452">SMS</a></li>
+                    <li><a href="https://wa.me/33667225452"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
+                    <li><a href="https://instagram.com/skynium"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://facebook.com/SkyniumRECONECT"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                    <li><a href="https://m.me/SkyniumRECONECT"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i> Messenger</a></li>
+                    <li><a href="mailto:contact@skynium.fr"><i class="fa-solid fa-envelope" aria-hidden="true"></i> E-Mail</a></li>
+                    <li><a href="sms:+33667225452"><i class="fa-solid fa-comment-sms" aria-hidden="true"></i> SMS</a></li>
                 </ul>
             </aside>
 
         </div>
     </main>
 
-    <footer>
-        <div class="footer-line"></div>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>Skynium E-Reservation</h3>
-            </div>
-            <div class="partners-block">
-                <div class="logos-container">
-                    <div class="logo-wrapper">
-                        <div class="circle-logo-placeholder"></div> 
-                        <span class="caption">Skynium<br>E-Reservation</span>
-                    </div>
-                    <div class="vertical-separator"></div>
-                    <div class="logo-wrapper">
-                        <div class="comet-logo-placeholder"></div>
-                        <span class="caption">Skynium</span>
-                    </div>
+    <footer role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Nos réseaux</h3>
+                    <nav aria-label="Réseaux sociaux">
+                        <ul>
+                            <li><a href="https://instagram.com/skynium"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                            <li><a href="https://facebook.com/SkyniumRECONECT"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                            <li><a href="https://wa.me/33667225452"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <h3 class="partner-title">Partenaire officiel</h3>
+
+                <div class="footer-col">
+                    <h3>Informations</h3>
+                    <nav aria-label="Informations légales">
+                        <ul>
+                            <li><a href="https://skynium.fr/mentionslegales.html">Mentions Légales</a></li>
+                            <li><a href="https://skynium.fr/politiqueconfidentialite.html">Politique de Confidentialité</a></li>
+                            <li><a href="https://skynium.fr/accessibilite.html">Accessibilité : totalement conforme</a></li>
+                            <li><a href="https://skynium.fr/souverainete.html">Souveraineté Numérique</a></li>
+                            <li><a href="https://skynium.fr/tarif.html">Tarif &amp; Garantie</a></li>
+                            <li><a href="https://skynium.fr/plan-du-site.html">Plan du site</a></li>
+                            <li><a href="https://skynium.fr/horizon2027.html">Horizon 2027</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Écosystème Skynium</h3>
+                    <nav aria-label="Services Skynium">
+                        <ul>
+                            <li><a href="https://my.skynium.fr">mySkynium</a></li>
+                            <li><a href="https://ecogreen.skynium.fr">Skynium ECOGREEN</a></li>
+                            <li><a href="https://loyalty.skynium.fr">Skynium LOYALTY</a></li>
+                            <li><a href="https://petal.skynium.fr">Skynium PETAL</a></li>
+                            <li><a href="https://updates.skynium.fr">Skynium LOGS</a></li>
+                            <li><a href="https://status.skynium.fr">Skynium STATUS</a></li>
+                            <li><a href="https://e-reservation.skynium.fr">Skynium E-RESERVATION</a></li>
+                            <li><a href="https://privacy.skynium.fr">Skynium PRIVACY</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li><a href="mailto:contact@skynium.fr"><i class="fa-solid fa-envelope" aria-hidden="true"></i> contact@skynium.fr</a></li>
+                        <li><a href="sms:+33667225452"><i class="fa-solid fa-phone" aria-hidden="true"></i> +33 6 67 22 54 52</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Skynium. Tous droits réservés.
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>Crée par <a href="https://skynium.fr" class="underline">Skynium</a> en 2024.</p>
-        </div>
-        <div class="footer-line bottom-line"></div>
     </footer>
 
     <script>var FreeScoutW={s:{"color":"#1d0469","position":"br","locale":"fr","require":["name","email","phone"],"id":1681224262}};(function(d,e,s){if(d.getElementById("freescout-w"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="freescout-w";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","https://support.iris.skynium.fr/modules/chat/js/widget.js?v=2503");</script>
     <script src="https://skynium.fr/ressources/skynium-data.js"></script>
+
 </body>
 </html>
